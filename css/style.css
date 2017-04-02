@@ -1,0 +1,86 @@
+body {
+    background-color: #CCCCCC;
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul:before, ul:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#carousel {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    border: 5px solid #FFFFFF;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+#carousel ul {
+    width: 3000px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#carousel li {
+    width: 600px;
+    height: 400px;
+    float: left;
+}
+
+#carousel span {
+    position: absolute;
+    color: #DDDDDD;
+    cursor: pointer;
+}
+
+#carousel span.prev {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+#carousel span.next {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+#indicators {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#indicators li {
+    float: left;
+    background-color: #DDDDDD;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#indicators li + li {
+    margin-left: 10px;
+}
+
+#indicators .active {
+    background-color: #888888;
+}

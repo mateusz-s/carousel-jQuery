@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery carousel</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="carousel">
+                <ul>
+                    <li data-slide="0">
+                        <img src="http://lorempixel.com/600/400/abstract/1/" alt="">
+                    </li>
+                    <li data-slide="1">
+                        <img src="http://lorempixel.com/600/400/abstract/2/" alt="">
+                    </li>
+                    <li data-slide="2">
+                        <img src="http://lorempixel.com/600/400/abstract/3/" alt="">
+                    </li>
+                    <li data-slide="3">
+                        <img src="http://lorempixel.com/600/400/abstract/4/" alt="">
+                    </li>
+                    <li data-slide="4">
+                        <img src="http://lorempixel.com/600/400/abstract/5/" alt="">
+                    </li>
+                </ul>
+                <span class="prev">
+                    <i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i>
+                </span>
+                <span class="next">
+                    <i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i>
+                </span>
+                <ol id="indicators">
+                    <li data-slide-to="0" class="active"></li>
+                    <li data-slide-to="1"></li>
+                    <li data-slide-to="2"></li>
+                    <li data-slide-to="3"></li>
+                    <li data-slide-to="4"></li>
+                </ol>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
